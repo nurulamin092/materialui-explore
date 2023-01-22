@@ -52,7 +52,8 @@ export default function Header(props) {
       <CssBaseline />
       <AppBar component="nav" sx={{
         backgroundColor :'transparent', 
-        boxShadow: 'none'
+        boxShadow: 'none',
+        mt:2
       }}>
         <Container>
         <Toolbar>
@@ -65,19 +66,28 @@ export default function Header(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography
+          {/* <Typography
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
             MUI
-          </Typography>
+          </Typography> */}
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}>
+            <img src="https://i.ibb.co/JsvBDwD/logo.png" alt="" style={{
+                width:'150px'
+            }}/>
+          </Box>
+
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
+              <Button key={item} sx={{ color: 'primary.main' }} variant='text'>
                 {item}
               </Button>
             ))}
+            <Button sx={{
+                bgcolor:'primary.green',
+            }}>Login</Button>
           </Box>
         </Toolbar>
         </Container>
