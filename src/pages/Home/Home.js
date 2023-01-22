@@ -1,9 +1,10 @@
 import React from 'react';
+import Banding from './Banding/Banding';
 
 const Home = () => {
     return (
         <div>
-            <h1>This is Home Page</h1>
+           <Banding/>
         </div>
     );
 };
