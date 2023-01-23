@@ -1,9 +1,9 @@
 
 import { Card, CardContent, CardMedia, Typography } from '@mui/material';
-import { hover } from '@testing-library/user-event/dist/hover';
 import React from 'react';
 
 const Service = ({image}) => {
+
     return (
         <Card sx={{
              maxWidth: 345 ,
