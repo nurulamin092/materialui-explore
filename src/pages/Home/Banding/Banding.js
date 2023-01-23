@@ -29,7 +29,14 @@ const Banding = () => {
                 <Button sx={{width:'50%'}}>Here Us</Button>
             </Stack>
             <Box sx={{
-                width:'50%'
+                width:'50%',
+                display:{
+                    xs:'none',
+                    sm:'none',
+                    md:'block',
+                    
+
+                }
             }}>
                 <img src="https://i.ibb.co/sPXVMbC/Frame.png" alt="banding" style={{width:'100%'}}/>
             </Box>
